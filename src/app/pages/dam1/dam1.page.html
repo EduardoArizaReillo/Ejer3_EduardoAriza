@@ -1,0 +1,54 @@
+<app-cabecera titulo="Dam1"></app-cabecera>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/assets/icon/fol.jpg" />
+      </ion-avatar>
+      <ion-label>FOL</ion-label>
+      <ion-checkbox  color="primary" slot="end" [(ngModel)]="checkedFol" (click)='openFol()'></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/assets/icon/images.png" />
+      </ion-avatar>
+      <ion-label>Ingles</ion-label>
+      <ion-checkbox  color="secondary" slot="end" (click)='openIngles()' [(ngModel)]="checkedIngles" ></ion-checkbox>
+    </ion-item>
+  </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/icon/keanujpg.jpg" />
+        </ion-avatar>
+        <ion-label>Lenguaje de Macas</ion-label>
+        <ion-checkbox  color="dark" slot="end" (click)='openLenguaje()' [(ngModel)]="checkedLenguajeDeMarcas" ></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/icon/entornos.png" />
+        </ion-avatar>
+        <ion-label>Entornos</ion-label>
+        <ion-checkbox  color="danger" slot="end" (click)='openEntornos()' [(ngModel)]="checkedEntornosDeDesarrollo" ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/icon/basepng.png" />
+        </ion-avatar>
+        <ion-label>Base de datos</ion-label>
+        <ion-checkbox  color="primary" slot="end" (click)='openBase()' [(ngModel)]="checkedBaseDeDatos" ></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/icon/programacion.jpg" />
+        </ion-avatar>
+        <ion-label>Programacion</ion-label>
+        <ion-checkbox color="dark" (click)='openProgramacion()' [(ngModel)]="checkedProgramacion"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+

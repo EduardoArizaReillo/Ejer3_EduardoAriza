@@ -1,0 +1,12 @@
+<app-cabecera titulo="Dam2"></app-cabecera>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of form" (click)="onClick( entry )">
+      <ion-avatar slot="start">
+        <img src={{entry.icono}} />
+      </ion-avatar>
+      <ion-label>{{entry.asignatura}}</ion-label>
+      <ion-checkbox color={{entry.color}}  slot="end" [(ngModel)]="entry.isChecked" ></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

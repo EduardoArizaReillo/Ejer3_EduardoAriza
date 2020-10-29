@@ -1,0 +1,18 @@
+<app-cabecera titulo="Datos personales"></app-cabecera>
+
+<ion-content>
+ 
+  <ion-label>Nombre</ion-label><ion-input [(ngModel)]="nombre" maxlength="20" autocomplete="nickname" placeholder="Introduce un nombre"></ion-input>
+    <p>{{nombre}}</p>
+  <ion-label>Localidad</ion-label><ion-input [(ngModel)]="localidad" maxlength="20" placeholder="Introduce tu localidad"></ion-input>
+    <p>{{localidad}}</p>
+  <ion-label>Estudios</ion-label><ion-input [(ngModel)]="estudios" maxlength="20" placeholder="Introduce tus estudios"></ion-input>
+    <p>{{estudios}}</p>
+  <ion-label>Email</ion-label><ion-input   maxlength="20" type="email" placeholder="Introduce tu email"></ion-input>
+
+  <ion-label>Fecha</ion-label><ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+  <ion-input   maxlength="20" type="email" placeholder="Introduce tu email"></ion-input>
+  
+
+  <ion-label>Contraseña</ion-label><ion-input  maxlength="20" type="password" placeholder="Introduce tu contraseña" ></ion-input>
+</ion-content>
